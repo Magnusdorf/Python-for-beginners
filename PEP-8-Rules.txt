@@ -1,0 +1,87 @@
+Why We Need PEP-8 ?
+
+-Because As Guido van Rossum said, “Code is read much more often than it is written.” You may spend a few minutes, or a whole day, writing a piece of code to process user authentication. 
+Once you’ve written it, you’re never going to write it again. But you’ll definitely have to read it again. That piece of code might remain part of a project you’re working on. 
+Every time you go back to that file, you’ll have to remember what that code does and why you wrote it, so readability matters.
+** As a beginner, following the rules of PEP 8 can make learning Python a much more pleasant task.
+
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	
+
+Naming Conventions!
+
+**Never use l, O, or I single letter names as these can be mistaken for 1 and 0, depending on typeface:
+
+(O = 2)  O or 0(zero) ? // l ? 1(one)
+
+**Use a lowercase word or words. Separate words by underscores to improve readability.
+
+my_numbers = [1, 2, 3, 4, 5]
+my_tuple = ('Mercedes', 'Audi', 'Jaguar', 'Ferrari', 'Volvo')
+
+How to Choose Names!
+
+**The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.
+
+x = 'Magnus'   >  X
+my_name = 'Magnus'  > ✓
+
+**Similarly, to reduce the amount of typing you do, it can be tempting to use abbreviations when choosing names. 
+When abbreviating words, abbreviations that will be confused in the future should not be used.
+
+Student = ['John']  > ✓
+st = ['John']  >  X
+
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+Code Layout!
+
+Blank Lines
+**Vertical whitespace, or blank lines, can greatly improve the readability of your code.
+
+Maximum Line Length and Line Breaking
+**PEP 8 suggests lines should be limited to 79 characters. This is because it allows you to have multiple files open next to one another, while also avoiding line wrapping.
+Of course, keeping statements to 79 characters or less is not always possible. PEP 8 outlines ways to allow statements to run over several lines.Of course, 
+keeping statements to 79 characters or less is not always possible. 
+
+PEP 8 outlines ways to allow statements to run over several lines:
+
+my dict = { key : value , 
+	    key1 : value1,
+	    key2 : value2
+}
+
+
+If it is impossible to use implied continuation, then you can use backslashes to break lines instead:
+
+from dijongo import ex1, \
+    ex2, ex3
+#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#	#
+
+Indentation!
+
+**Indentation, or leading whitespace, is extremely important in Python. The indentation level of lines of code in Python determines how statements are grouped together.
+
+k = 15
+if k < 30:
+     print(f'30 is langer than {k}')
+
+*Use 4 consecutive spaces to indicate indentation.
+*Prefer spaces over tabs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
